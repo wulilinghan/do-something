@@ -27,5 +27,6 @@ public class BitOperation {
         // 无符号左移运算 <<<
 
         // 无符号右移运算 >>>
+        ClassLoader classLoader = BitOperation.class.getClassLoader();
     }
 }
