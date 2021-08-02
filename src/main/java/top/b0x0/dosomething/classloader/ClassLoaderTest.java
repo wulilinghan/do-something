@@ -1,4 +1,6 @@
-package top.b0x0.dosomething;
+package top.b0x0.dosomething.classloader;
+
+import org.springframework.web.client.RestTemplate;
 
 /**
  * @author ManJiis
@@ -7,6 +9,8 @@ package top.b0x0.dosomething;
 public class ClassLoaderTest {
 
     public static void main(String[] args) {
+        RestTemplate restTemplate = new RestTemplate();
+
         ClassLoader loader = ClassLoaderTest.class.getClassLoader();
         int count = 0;
         while (loader != null) {
