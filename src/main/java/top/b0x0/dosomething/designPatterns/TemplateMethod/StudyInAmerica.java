@@ -1,4 +1,4 @@
-package top.b0x0.dosomething.templateMethod;
+package top.b0x0.dosomething.designPatterns.TemplateMethod;
 
 //具体子类: 美国留学
 class StudyInAmerica extends StudyAbroad {

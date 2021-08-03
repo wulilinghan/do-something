@@ -1,4 +1,4 @@
-package top.b0x0.dosomething.templateMethod;
+package top.b0x0.dosomething.designPatterns.TemplateMethod;
 
 /**
  * 抽象类: 出国留学
