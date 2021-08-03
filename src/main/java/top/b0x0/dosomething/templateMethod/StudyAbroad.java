@@ -1,4 +1,4 @@
-package top.b0x0.dosomething.r11;
+package top.b0x0.dosomething.templateMethod;
 
 /**
  * 抽象类: 出国留学

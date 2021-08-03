@@ -1,6 +1,4 @@
-package top.b0x0.dosomething.r11;
-
-import top.b0x0.dosomething.r11.StudyAbroad;
+package top.b0x0.dosomething.templateMethod;
 
 //具体子类: 美国留学
 class StudyInAmerica extends StudyAbroad {

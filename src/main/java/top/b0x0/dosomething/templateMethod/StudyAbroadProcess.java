@@ -1,6 +1,4 @@
-package top.b0x0.dosomething.r11;
-
-import top.b0x0.dosomething.r11.StudyAbroad;
+package top.b0x0.dosomething.templateMethod;
 
 /**
  * 模式的应用场景
@@ -10,7 +8,7 @@ import top.b0x0.dosomething.r11.StudyAbroad;
  */
 public class StudyAbroadProcess {
     public static void main(String[] args) {
-        StudyAbroad tm = new top.b0x0.dosomething.r11.StudyInAmerica();
+        StudyAbroad tm = new top.b0x0.dosomething.templateMethod.StudyInAmerica();
         tm.TemplateMethod();
     }
 }
