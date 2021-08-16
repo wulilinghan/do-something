@@ -1,7 +1,7 @@
 package top.b0x0.dosomething.designPatterns.TemplateMethod;
 
 //具体子类: 美国留学
-class StudyInAmerica extends StudyAbroad {
+public class StudyInAmerica extends StudyAbroad {
     @Override
     public void LookingForSchool() {
         System.out.println("一.索取学校以下资料：");

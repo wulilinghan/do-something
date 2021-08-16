@@ -40,4 +40,8 @@ public class User {
     public void setAge(Integer age) {
         this.age = age;
     }
+    // 方法可以和类名相同
+    public void User(String id){
+
+    }
 }

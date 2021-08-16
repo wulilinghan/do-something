@@ -3,7 +3,7 @@ package top.b0x0.dosomething.designPatterns.TemplateMethod;
 /**
  * 抽象类: 出国留学
  */
-abstract class StudyAbroad {
+public abstract class StudyAbroad {
 
     /**
      * 模板方法
