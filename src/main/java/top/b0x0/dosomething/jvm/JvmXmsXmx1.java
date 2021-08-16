@@ -36,6 +36,7 @@ public class JvmXmsXmx1 {
         //  -XX:MaxTenuringThreshold:设置新生代垃圾最大的年龄
         //  -XX:+PrintGCDetails:输出详细的gc处理日志
         //  -XX:+PrintGC:输出简要的gc处理日志
+        //  -XX:+HeapDumpOnOutMemoryError 内存溢出堆转储
 
     }
 
