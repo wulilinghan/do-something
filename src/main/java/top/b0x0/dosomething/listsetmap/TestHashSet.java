@@ -1,8 +1,7 @@
-package top.b0x0.dosomething.list;
+package top.b0x0.dosomething.listsetmap;
 
 import java.util.Arrays;
 import java.util.HashSet;
-import java.util.LinkedList;
 
 /**
  * @author TANG

@@ -1,9 +1,5 @@
 package top.b0x0.dosomething.jvm;
 
-import top.b0x0.dosomething.list.TestHashSet;
-
-import java.lang.reflect.Method;
-
 /**
  * 死锁
  *

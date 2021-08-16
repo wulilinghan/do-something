@@ -1,7 +1,5 @@
 package top.b0x0.dosomething;
 
-import top.b0x0.dosomething.list.TestHashSet;
-
 import java.lang.reflect.InvocationTargetException;
 import java.lang.reflect.Method;
 
@@ -16,7 +14,7 @@ public class TestReflect {
     public static void main(String[] args) throws NoSuchMethodException, InvocationTargetException, IllegalAccessException, ClassNotFoundException {
         String[] strings = {"1","1"};
 //        Class<TestHashSet> aClass = TestHashSet.class;
-        Class<?> aClass = Class.forName("top.b0x0.dosomething.list.TestHashSet");
+        Class<?> aClass = Class.forName("top.b0x0.dosomething.listsetmap.TestHashSet");
         Method main = aClass.getDeclaredMethod("main", String[].class);
         Object invoke = main.invoke(aClass,(Object) strings);
     }

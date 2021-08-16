@@ -8,8 +8,13 @@ package top.b0x0.dosomething.aclass;
  * 使用default修饰方法  方法不强制重写
  */
 public interface TestInterface {
-    default void test() {
-        System.out.println("true = " + true);
+
+    default void defaultMethod() {
+        System.out.println("TestInterface default method ");
+    }
+
+    static void staticMethod() {
+        System.out.println("TestInterface static method ");
     }
 
     // 使用abstract修饰不修饰都行

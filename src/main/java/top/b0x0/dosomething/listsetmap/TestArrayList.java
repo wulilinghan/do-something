@@ -1,7 +1,6 @@
-package top.b0x0.dosomething.list;
+package top.b0x0.dosomething.listsetmap;
 
 import java.util.ArrayList;
-import java.util.LinkedList;
 
 /**
  * @author TANG
