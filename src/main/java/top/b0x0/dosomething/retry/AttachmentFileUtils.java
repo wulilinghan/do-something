@@ -21,10 +21,11 @@ public class AttachmentFileUtils {
     //    @Retryable(maxAttempts = 2, value = TimeoutException.class, backoff = @Backoff(delay = 1000L, multiplier = 1.5))
     @Retryable(maxAttempts = 5, value = Exception.class)
     public String uploadFile() throws FileException {
-        System.out.println(LocalTime.now() + " **** 第" + num + "次上传文件....");
+//        System.out.println(LocalTime.now() + " **** 第" + num + "次上传文件....");
         num++;
         // 模拟： 前四次执行都出异常了 第五次成功了
         if (num < 5) {
+            System.out.println(num + "——上传文件__接口调用超时异常。。。。重试中。。。");
             throw new FileException("上传文件__接口调用超时异常..." + num);
         }
 
@@ -32,7 +33,7 @@ public class AttachmentFileUtils {
 //        if (num < 6) {
 //            throw new FileException("上传文件失败...");
 //        }
-
+        System.out.println(num + "——上传文件成功。。。");
         return "file_name";
     }
 
