@@ -39,4 +39,17 @@ public class Test1 {
             System.out.println(e.getMessage());
         }
     }
+
+    @Test
+    public void test3() {
+        try {
+            String s = null;
+            System.out.println("s = " + s.toString());
+//            int i = 1 / 0;
+        } catch (NullPointerException e) {
+            System.err.println("捕获空指针");
+        } catch (Exception e) {
+            System.err.println("捕获异常");
+        }
+    }
 }
