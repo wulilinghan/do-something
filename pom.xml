@@ -31,6 +31,26 @@
 
     <dependencies>
 
+<!--        <dependency>
+            <groupId>LocalForJFramewrok</groupId>
+            <artifactId>jbarcode</artifactId>
+            <version>0.2.8</version>
+        </dependency>-->
+
+        <dependency>
+            <groupId>LocalForJFramewrok</groupId>
+            <artifactId>jbarcode</artifactId>
+            <version>0.2.8</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/src/main/resources/lib/jbarcode-0.2.8.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>com.google.guava</groupId>
+            <artifactId>guava</artifactId>
+            <version>18.0</version>
+        </dependency>
+
         <dependency>
             <groupId>org.springframework.retry</groupId>
             <artifactId>spring-retry</artifactId>
@@ -90,8 +110,59 @@
 
     </dependencies>
 
+    <!--<repositories>
+
+        <repository>
+            <id>EBIPublic</id>
+            <name>EBIPublic</name>
+            <url>https://www.ebi.ac.uk/intact/maven/nexus/content/repositories/public/</url>
+        </repository>
+
+        <repository>
+            <id>gridgainsystems</id>
+            <name>gridgainsystems</name>
+            <url>http://www.gridgainsystems.com/nexus/content/repositories/external/</url>
+        </repository>
+
+        <repository>
+            <id>nexus-aliyun</id>
+            <name>Nexus aliyun</name>
+            <layout>default</layout>
+            <url>http://maven.aliyun.com/nexus/content/groups/public</url>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+        </repository>
+
+    </repositories>-->
+
     <build>
         <plugins>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-jar-plugin</artifactId>
+                <configuration>
+                    <archive>
+                        <manifest>
+                            <addClasspath>true</addClasspath>    <!--//指定添加项目中使用的外部jar的classpath项-->
+                            <classpathPrefix>lib/</classpathPrefix> <!--//指定外部jar所在的路径，添加的classpath为 【路径】/jar文件名，Maven自动解析文件名，使用本项目生成的jar包时，当前目录下有lib文件夹，lib文件夹中有本项目使用的外部jar文件即可-->
+                            <mainClass>top.b0x0.dosomething.Application</mainClass>   <!-- //指定本项目jar包的Main-Class-->
+                        </manifest>
+                    </archive>
+                    <!--<webResources>
+                        <resource>
+                            <directory>${project.basedir}/src/main/resources/lib</directory>
+                            <targetPath>WEB-INF/lib/</targetPath>
+                            <includes>
+                                <include>**/*.jar</include>
+                            </includes>
+                        </resource>
+                    </webResources>-->
+                </configuration>
+            </plugin>
             <plugin>
                 <groupId>org.apache.maven.plugins</groupId>
                 <artifactId>maven-compiler-plugin</artifactId>
