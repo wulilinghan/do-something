@@ -1,4 +1,4 @@
-package top.b0x0.dosomething.designPatterns.TemplateMethod;
+package top.b0x0.dosomething.design_patterns.TemplateMethod;
 
 /**
  * 设计模式 - 行为型模式 - 模板方法（Template Method）
@@ -10,7 +10,7 @@ package top.b0x0.dosomething.designPatterns.TemplateMethod;
  */
 public class TemplateMethodTest {
     public static void main(String[] args) {
-        StudyAbroad tm = new top.b0x0.dosomething.designPatterns.TemplateMethod.StudyInAmerica();
+        StudyAbroad tm = new top.b0x0.dosomething.design_patterns.TemplateMethod.StudyInAmerica();
         tm.TemplateMethod();
     }
 }

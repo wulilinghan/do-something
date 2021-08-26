@@ -1,4 +1,4 @@
-package top.b0x0.dosomething.designPatterns.Observer;
+package top.b0x0.dosomething.design_patterns.Observer;
 
 /**
  * @author TANG

@@ -1,4 +1,4 @@
-package top.b0x0.dosomething.designPatterns.Observer;
+package top.b0x0.dosomething.design_patterns.Observer;
 
 /**
  * 设计模式 - 行为型模式 - 观察者模式

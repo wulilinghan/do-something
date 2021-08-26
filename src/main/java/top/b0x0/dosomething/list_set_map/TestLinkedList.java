@@ -1,4 +1,4 @@
-package top.b0x0.dosomething.listsetmap;
+package top.b0x0.dosomething.list_set_map;
 
 import java.util.LinkedList;
 

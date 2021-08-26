@@ -1,9 +1,4 @@
-package top.b0x0.dosomething.aclass;
-
-import org.bouncycastle.jcajce.provider.symmetric.IDEA;
-import top.b0x0.dosomething.pojo.User;
-
-import javax.swing.*;
+package top.b0x0.dosomething.a_class;
 
 /**
  * @author TANG

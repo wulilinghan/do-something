@@ -1,4 +1,4 @@
-package top.b0x0.dosomething.aclass;
+package top.b0x0.dosomething.a_class;
 
 
 /**
